@@ -1,4 +1,4 @@
-echo "# 🐦 Angry Birds Epic All Stars Linux Launcher
+🐦 Angry Birds Epic All Stars Linux Launcher
 
 A simple bridge to run the All Stars version of Angry Birds Epic on Linux systems using Wine/Proton.
 
