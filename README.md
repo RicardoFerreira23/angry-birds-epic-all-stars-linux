@@ -67,7 +67,7 @@ Once installed, the launcher manages everything within the following directory:
 ~/.abe_allstars/install_log.txt - History of the installation process.
 
 ~/.abe_allstars/wine_log.txt - Real-time logs for troubleshooting game crashes or errors.
-
+``
 <p align="center"> Based on the <strong>Angry Birds Epic: All Stars</strong> community project.
 
 
