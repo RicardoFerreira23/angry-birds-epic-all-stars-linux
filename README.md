@@ -21,7 +21,6 @@
 ## ✨ Features
 
 * **⚡ One-Time Setup:** Select your game folder once, and the launcher handles the file migration.
-* **🌍 Auto-Translation:** Automatically forces the game language to **Portuguese (Brazil)** via Wine registry injection.
 * **📦 Isolated Prefix:** Keeps all game data and Wine configurations separate from your system in `~/.abe_allstars`.
 * **🛠️ Mod Compatibility:** Pre-configured with essential DLL overrides (`winhttp`) required for the All Stars mod.
 * **📜 Debugging Logs:** Generates detailed logs for both installation (`install_log.txt`) and runtime (`wine_log.txt`).
