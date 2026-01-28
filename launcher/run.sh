@@ -78,12 +78,15 @@ EOF
 
 chmod +x "$DESKTOP_FILE"
 # --- 5. EXECUÇÃO ---
+# Força o idioma e limpa o terminal de mensagens de erro irrelevantes do Wine
 wine reg add "HKEY_CURRENT_USER\Software\Rovio\Angry Birds Epic" /v "Language_h464735252" /t REG_SZ /d "Portuguese (Brazil)" /f > /dev/null 2>&1
 
 cd "$DEST" || error_exit "Pasta do jogo inacessível."
 
-# Feedback visual
+# Lança o Zenity em background e armazena o PID para fechá-lo depois se necessário
 zenity --info --text="Iniciando Angry Birds Epic: All Stars..." --timeout=2 --no-wrap --title="Launcher" &
+ZEN_PID=$!
 
-# O EXEC deve ser sempre a ÚLTIMA linha funcional do script
-WINEDLLOVERRIDES="$DLL_OVERRIDES" exec wine "All Stars.exe"
+# O 'exec' substitui o processo do script pelo do Wine. 
+# Adicionamos '2>/dev/null' para o terminal não ficar cuspindo logs inúteis.
+WINEDLLOVERRIDES="$DLL_OVERRIDES" exec wine "All Stars.exe" > /dev/null 2>&1
