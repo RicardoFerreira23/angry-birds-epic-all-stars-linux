@@ -20,10 +20,11 @@
 
 ## ✨ Features
 
-* **⚡ One-Time Setup:** Select your game folder once, and the launcher handles the file migration.
+* **⚡ One-Time Setup:** Select your game folder once, and the launcher handles the file migration automatically.
+* **🖥️ Native Integration:** Automatically creates a Desktop Entry (`.desktop`) with a high-quality icon and proper window grouping (**StartupWMClass**).
 * **📦 Isolated Prefix:** Keeps all game data and Wine configurations separate from your system in `~/.abe_allstars`.
-* **🛠️ Mod Compatibility:** Pre-configured with essential DLL overrides (`winhttp`) required for the All Stars mod.
-* **📜 Debugging Logs:** Generates detailed logs for both installation (`install_log.txt`) and runtime (`wine_log.txt`).
+* **🛠️ Mod Compatibility:** Pre-configured with essential DLL overrides (`winhttp`) and automatic language detection (PT-BR).
+* **📜 Logs & Debugging:** Generates installation logs for easy troubleshooting.
 
 ## 📋 Prerequisites
 
@@ -46,8 +47,8 @@ sudo dnf install wine zenity
 Clone the repository:
 
 Bash
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-cd your-repo-name
+git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+cd seu-repositorio
 Grant execution permission:
 
 Bash
@@ -56,18 +57,20 @@ Launch the game:
 
 Bash
 ./launcher/run.sh
-Note: On the first run, a window will pop up asking you to select the folder containing the original Windows game files.
+[!TIP] Note: On the first run, a window will pop up asking you to select the folder containing the original Windows game files. After that, you can launch the game directly from your Application Menu.
 
 📂 Folder Structure
 Once installed, the launcher manages everything within the following directory:
 
 ~/.abe_allstars/ - Main directory containing game files and the Wine prefix.
 
-~/.abe_allstars/install_log.txt - History of the installation process.
+~/.abe_allstars/run.sh - The permanent launcher (independent from the git folder).
 
-~/.abe_allstars/wine_log.txt - Real-time logs for troubleshooting game crashes or errors.
+~/.local/share/applications/ - Where the system menu shortcut is stored.
 ```
-<p align="center"> Based on the <strong>Angry Birds Epic: All Stars</strong> community project.Built with simplicity and performance in mind for the Linux community.</p>
+<p align="center"> Based on the <strong>Angry Birds Epic: All Stars</strong> community project.
 
 
------
+Built with simplicity and performance in mind for the Linux community. </p>
+
+<p align="center"> <img src="assets/icon.png" width="48" alt="Game Icon"> </p>
