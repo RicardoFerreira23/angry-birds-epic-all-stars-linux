@@ -72,5 +72,20 @@ Once installed, the launcher manages everything within the following directory:
 
 
 Built with simplicity and performance in mind for the Linux community. </p>
+## 📺 Official Mod Trailer
+
+Watch the official trailer by **Drip Missouri** to see all the new content included in this mod:
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=oOUYWHTGgPY">
+    <img src="https://img.youtube.com/vi/oOUYWHTGgPY/0.jpg" alt="Angry Birds Epic: All Stars Trailer" width="70%">
+  </a>
+</p>
+
+### What's New in All Stars:
+* **New Bird Classes:** Discover unique abilities for your team.
+* **Reworked Content:** Experience rebalanced levels and new cave mini-bosses.
+* **Live Events:** Seasonal and special events are back in action.
+* **New Passives & Weapons:** Powerful upgrades and recipes to master.
 
 <p align="center"> <img src="assets/icon.png" width="48" alt="Game Icon"> </p>
